@@ -1,0 +1,21 @@
+<%= form_for(@occurrence) do |f| %>
+  <div class="form">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control'  %><br/>
+
+    <%= f.label :description %>
+    <%= f.text_field :description, class: 'form-control' %><br/>
+
+    <%= f.label :occurenceType %>
+    <%= f.text_field :occurenceType, class: 'form-control' %><br/>
+
+    <%= f.label :address %>
+    <%= f.text_field :address, class: 'form-control' %><br/>
+
+    <%= f.label :status %>
+    <%= f.text_field :status, class: 'form-control' %><br/>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create", class: "btn btn-primary" %>
+  </div>
+<% end %>

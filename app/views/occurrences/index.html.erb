@@ -1,0 +1,14 @@
+<h1>Occurrences</h1>
+<br/>
+
+<% @occurrences.each do |occurrence| %>
+  <div class="occurrence">
+    <li>
+      <h3><%= occurrence.title %></h3>
+      <h5><%= occurrence.description %></h5>
+      <p><%= occurrence.occurenceType %></p>
+      <p><%= occurrence.address %></p>
+      <p><%= occurrence.status %></p>
+    </li>
+  </div>
+<% end %>
